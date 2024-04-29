@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Youtube_Api, Api_Key } from "../constant";
+import { Youtube_Api } from "../constant";
 import axios from "axios";
 import CardVideo from "./CardVideo";
 import CommentsContainer from "./CommentsContainer";
@@ -9,6 +9,7 @@ import VideoButtons from "./VideoButtons";
 import { updateSearchedData } from "../utils/searchDataSlice";
 // import axios from "axios";
 const VideoContainer = () => {
+  const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
   const dispatch = useDispatch();
   // dispatch(updateSearchedData({}));
   const selector = useSelector(
@@ -19,7 +20,7 @@ const VideoContainer = () => {
   const [youtubeData, setYoutubeData] = useState();
   const fetchYoutubeData = async () => {
     try {
-      const response = await axios.get(Youtube_Api + Api_Key);
+      const response = await axios.get(Youtube_Api + apiKey);
       console.log(response);
       setYoutubeData(response.data.items);
     } catch (err) {

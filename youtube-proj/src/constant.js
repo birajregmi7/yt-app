@@ -1,27 +1,29 @@
+
 export const videoArray = [
-    "JavaScript",
-    "IPL",
-    "Manchester United",
-    "Premier Leauge",
-    "Redux",
-    "Data Structure and Algorithm",
+  "JavaScript",
+  "IPL",
+  "Manchester United",
+  "Premier Leauge",
+  "Redux",
+  "Data Structure and Algorithm",
 ];
 
 export const Youtube_Api = 'https://www.googleapis.com/youtube/v3/videos?part=id,snippet,contentDetails,statistics&q=&chart=mostPopular&country=US&maxResults=50&key='
-export const Api_Key = 'AIzaSyCRDH9-LJ5-RrD9iS20FDKe2aElVf2lMQY'
-export const Searchbar_api = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key=AIzaSyAh9tvI-kWyVC-uquNfQZS7ajX1mfSu8-U&q=hellosurfing"
+
+export const Searchbar_api = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key=${import.meta.env.VITE_REACT_APP_API_KEY}&q=hellosurfing`;
+
 export const Youtube_Search_Suggestion = 'http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q='
 
-export  const commentsData = [
+export const commentsData = [
   {
     id: 1,
     name: "John Doe",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat ex id tincidunt vestibulum. Duis rhoncus, est eu congue aliquam, justo leo consectetur lorem, ac aliquam purus turpis sit amet odio. Nullam ultrices elit sit amet consequat eleifend. Morbi et justo sit amet dui tincidunt feugiat. Nulla facilisi. Suspendisse potenti. Donec pretium, dolor eget auctor consequat, ipsum libero eleifend libero, in sollicitudin elit lacus ut velit. Sed vel magna nisi. Vivamus nec dolor ac lorem finibus faucibus ut in metus. Quisque eget justo vitae justo dictum vulputate nec vitae lacus. Ut sed feugiat elit. Nam vitae massa vitae justo lobortis malesuada. Aliquam sit amet tortor vel mi blandit commodo. Suspendisse interdum lacinia quam, nec malesuada ex ultrices nec.",
+    text: "Wow nice video✌️",
     replies: [
       {
         id: 2,
         name: "Alice Smith",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec libero eleifend, faucibus orci ut, cursus dolor. Fusce sed metus erat. Vivamus volutpat diam sit amet justo ullamcorper, at scelerisque elit ullamcorper. Ut convallis urna nec justo suscipit, et gravida dolor finibus. Proin a libero accumsan, fermentum nisl a, malesuada sapien. Sed in felis rutrum, dictum ligula ac, dictum ex. Aenean mattis risus sit amet lorem vulputate, in auctor mauris sodales. Donec interdum eros lectus, in vestibulum sem vestibulum et. Integer rutrum fermentum diam, sit amet semper nulla volutpat eu. Integer ut enim et libero convallis tincidunt. Curabitur scelerisque enim a luctus venenatis.",
+        text: "Yes actuall the video is good ",
         replies: [
           {
             id: 3,
@@ -80,5 +82,5 @@ export  const commentsData = [
 ];
 
 export const live_Data = [
-  
+
 ]
